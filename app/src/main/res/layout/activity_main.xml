@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="250dp"
+        android:layout_height="61dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="Welcome To Mambuzi" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:text="Toppings"
+        android:gravity="center_horizontal"/>
+
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Milk" />
+
+
+
+    <Button
+        android:id="@+id/num_of_Cups"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="addCups"
+        android:padding="16dp"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/darker_gray"
+        android:padding="16dp"
+        android:text="cups" />
+
+    <Button
+        android:id="@+id/remove_cups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="removecups"
+        android:text="-" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/darker_gray"
+        android:padding="16dp"
+        android:text="Price" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="feedback"
+        android:text="Submit order" />
+
+
+</LinearLayout>
+</ScrollView>
